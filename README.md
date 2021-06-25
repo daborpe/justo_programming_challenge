@@ -5,8 +5,19 @@
  3. mysql  Ver 14.14 Distrib 5.7.33
  
 ## GETTING STARTED
+### Create virtualenv
+```
+pip install virtualenv
+virtualenv -p /path/to/python3.6 virtualenv
+```
+or
+```
+sudo apt install python3.6-venv
+python3.6 -m venv /path/to/new/virtual/environment
+virtualenv -p /path/to/python3.6 virtualenv
+```
 ### Install requirements
-``` python
+```
 pip install -r requirements/base.txt
 ```
 ### Create .env file
@@ -18,14 +29,14 @@ cp .env.example .env
 
 ### Database
 Once you have defined database settings in _.env_ file, the you have to run django migrations. 
-``` python
+```
 python salty-spitoon/manage.py migrate
 ```
 
 ### Users
 In order to start testing the project, is necessary to create some users, this projects has fixtures files for that purpose. All users have the password **_escupideradesalty_**.
 Inside *salty-spitoon* folder:
-``` python
+```
 python manage.py loaddata fixtures/users.json
 python manage.py loaddata fixtures/managerusers.json
 ```
