@@ -1,0 +1,275 @@
+[
+{
+    "model": "users.user",
+    "pk": "09d74076-4827-4d6b-b4ca-5ae75fa28e30",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$v2dbx2izBpyBCIdDT2WHgF$V/2w8Vt3ATK2Dd0sIjAXe4xd5WfNeCkymwzxb0MaYX0=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "hitman2",
+        "first_name": "Hitman",
+        "last_name": "Dos",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-06-25T21:29:36Z",
+        "created_at": "2021-06-25T21:29:36.587Z",
+        "updated_at": "2021-06-25T21:29:49.929Z",
+        "email": "hitman2@saltyspitoon.com",
+        "role": "hitman",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": "41513578-0227-4014-9784-f837a3b99a78",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$E0LnGuaYuIX2YCR0CRfN20$zymhQPpR5FNMK8pvEIN7eA77lIAr1F7sWepSFOWl8VI=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "hitman9",
+        "first_name": "Hitman",
+        "last_name": "Nueve",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-06-25T21:35:53Z",
+        "created_at": "2021-06-25T21:35:54.139Z",
+        "updated_at": "2021-06-25T21:36:05.031Z",
+        "email": "hitman9@saltyspitoon.com",
+        "role": "hitman",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": "4a51d071-5ecc-4ccf-adc9-bed8ad584ac5",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$TtWk7D2r71Pk36cisgful0$ZGoXNqB+Sa9H6fOCAvJfHxVBS+PMfsBYpa44fIJiQWg=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "hitman3",
+        "first_name": "Hitman",
+        "last_name": "Tres",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-06-25T21:30:34Z",
+        "created_at": "2021-06-25T21:30:34.349Z",
+        "updated_at": "2021-06-25T21:30:47.463Z",
+        "email": "hitman3@saltyspitoon.com",
+        "role": "hitman",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": "5c010502-4c1c-492c-8280-1266261f2afe",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$Cm3C8kvaQRY8ekdGRQYVCk$qaAmhqmbr/bngnqe7Ylqyp3Aoy+i1tWNXL8EH274c1M=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "gerente3",
+        "first_name": "Gerente",
+        "last_name": "Tres",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-06-25T21:28:01Z",
+        "created_at": "2021-06-25T21:28:01.638Z",
+        "updated_at": "2021-06-25T21:28:24.512Z",
+        "email": "manager3@saltyspitoon.com",
+        "role": "manager",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": "87ffe1ea-6c7e-46b6-bed0-a3bb05d3a037",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$WD2m254p8PT6vpSxQgjeaY$L0o/NOevytLv4xmpWoZHt7YEK/ISrCDm2JQFByfD7Sw=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "hitman6",
+        "first_name": "Hitman",
+        "last_name": "Seis",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-06-25T21:33:09Z",
+        "created_at": "2021-06-25T21:33:09.621Z",
+        "updated_at": "2021-06-25T21:33:22.329Z",
+        "email": "hitman6@saltyspitoon.com",
+        "role": "hitman",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": "93a9bd53-c21e-44cb-b356-4569f3c353c9",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$tMBD2EaT39pJ4tgFv6GCPy$EPWhj0qtVRqYE1DWvEqFVrvnEk1oWVD9pWGZV1oJnDM=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "hitman1",
+        "first_name": "Hitman",
+        "last_name": "Uno",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-06-25T21:29:06Z",
+        "created_at": "2021-06-25T21:29:06.905Z",
+        "updated_at": "2021-06-25T21:29:26.270Z",
+        "email": "hitman1@saltyspitoon.com",
+        "role": "hitman",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": "977e2b67-0c58-45c2-8ed3-5f3491eb9963",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$ZFkIel0W8B6C3zmgRwOM4B$9+lRNjwgEo8n+MFTjyRFSoxfdrec+OZ/F0O/IGDaA+g=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "hitman7",
+        "first_name": "Hitman",
+        "last_name": "Siete",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-06-25T21:34:19Z",
+        "created_at": "2021-06-25T21:34:20.169Z",
+        "updated_at": "2021-06-25T21:35:17.226Z",
+        "email": "hitman7@saltyspitoon.com",
+        "role": "hitman",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": "994a5565-7651-43c2-9e1c-a56b7d280c0a",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$niJNcRXJxIcRTuR98Zcq2H$tG+oySHMXkmhvZHRBRIahLbjGFeOzTZ1rLm85Zjg5+E=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "hitman5",
+        "first_name": "Hitman",
+        "last_name": "Cinco",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-06-25T21:32:47Z",
+        "created_at": "2021-06-25T21:32:47.966Z",
+        "updated_at": "2021-06-25T21:32:59.604Z",
+        "email": "hitman5@saltyspitoon.com",
+        "role": "hitman",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": "a32f5d53-1531-4f17-924f-8f1bf17037b6",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$smv81mEUw4VAvi13bNxmoR$K3VrG/QSokNYTtYn4HlbZapsFN1rvUAdosT0Jn/AO5g=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "hitman4",
+        "first_name": "Hitman",
+        "last_name": "Cuatro",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-06-25T21:32:16Z",
+        "created_at": "2021-06-25T21:32:16.763Z",
+        "updated_at": "2021-06-25T21:32:29.478Z",
+        "email": "hitman4@saltyspitoon.com",
+        "role": "hitman",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": "b336db4e-ce56-462f-9e66-939b5936833f",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$emDG6w6ppaBp3sOgqUbkTD$hI6TcFJTPQF+3ULvza45SZuv8hTx1/Ch0mZ4Q996x7o=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "gerente1",
+        "first_name": "Gerente",
+        "last_name": "Uno",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-06-25T21:25:23Z",
+        "created_at": "2021-06-25T21:25:23.967Z",
+        "updated_at": "2021-06-25T21:25:59.675Z",
+        "email": "manager1@saltyspitoon.com",
+        "role": "manager",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": "c05ab3ef-695f-4bf2-8a3b-e6a0483e48d3",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$OAYzMrERzQory9bagA5PSq$30HpNaMO6u93wxNwWuAVM1RkWJhd60h53aMkVXHOF5w=",
+        "last_login": "2021-06-25T21:22:37Z",
+        "is_superuser": true,
+        "username": "jefazo",
+        "first_name": "Cabeza de Bolo",
+        "last_name": "Sanchez",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-06-25T21:21:55Z",
+        "created_at": "2021-06-25T21:21:55.923Z",
+        "updated_at": "2021-06-25T21:24:13.340Z",
+        "email": "boss@saltyspitoon.com",
+        "role": "boss",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": "d1590658-1432-4078-ba15-021bf48db73f",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$bobWbbsnGzX2G1jvIcaHRb$G3LwqTU5GYP4msgT73odDbxZIb0PvxUTmK0rY0sVFW8=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "hitman8",
+        "first_name": "Hitman",
+        "last_name": "Ocho",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-06-25T21:35:24Z",
+        "created_at": "2021-06-25T21:35:24.789Z",
+        "updated_at": "2021-06-25T21:35:38.002Z",
+        "email": "hitman8@saltyspitoon.com",
+        "role": "hitman",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": "daa73a13-c16d-4184-a2a5-1d586114db30",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$Zg73zYq3uX1SNRSaEqSakn$3BFBIDlBufTJPjkSlytg+MLKnhTkLICsQFuk2gKEIOM=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "gerente2",
+        "first_name": "Gerente",
+        "last_name": "Dos",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-06-25T21:27:07Z",
+        "created_at": "2021-06-25T21:27:07.382Z",
+        "updated_at": "2021-06-25T21:27:36.450Z",
+        "email": "manager2@saltyspitoon.com",
+        "role": "manager",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

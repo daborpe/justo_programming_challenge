@@ -1,0 +1,87 @@
+label.required::after {
+    content: ' *';
+    color: #e31e24;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul#id_is_active li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+ul.errorlist {
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 5px;
+}
+
+#loading{
+	z-index: 100;
+    background-color: rgba(255,255,255,0.75);
+    display: none;
+}
+
+#loading .absolute-centering {
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.profile_pic {
+	border: 2px solid #343a40;
+    color: #e31e24;
+    padding: 5px;
+    border-radius: 40px;
+    width: 40px;
+    margin: auto 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.profile_pic:focus{
+	outline: none !important;
+}
+
+.profile_info {
+	font-size: 12px;
+}
+
+/* OVERWRITE CLASSES */
+.form-group {
+	position: relative;
+}
+.navbar-brand img{
+    width: 170px;
+}
+
+.table td {
+    font-size: 13px;
+}
+
+.table thead th {
+	vertical-align: middle;
+	text-align: center;
+	font-size: 12px;
+    padding: 10px 5px;
+    color: white;
+}
+
+.table .thead-orange th {
+    background-color: #f96616;
+}
+
+.page-item .page-link{
+    color: #fcd605;
+    background-color: #f96616;
+}
+
+.page-item.active .page-link {
+    background-color: #fcd605;
+    border-color: #fcd605;
+}

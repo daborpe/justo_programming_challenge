@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Salty Spitoon | Detalle de sicario{% endblock %}
+
+{% block content %}
+	<section class="hit_create">
+		<form method="post" autocomplete="off" novalidate>
+			{% csrf_token %}
+			<div class="table-responsive mt-2">
+				<table class="table table-hover">
+					<thead class="thead-orange">
+					    <tr>
+					     	<th colspan="2" scope="col">
+					     		DETALLE DE USUARIO
+					     	</th>
+					    </tr>
+				  	</thead>
+				  	<tbody>
+				  		<tr>
+				  			<td><b>Nombre:</b></td>
+				  			<td>
+				  				{{ object.first_name }}
+				  				{{ form.first_name.as_hidden }}
+				  			</td>
+				  		</tr>
+				  		<tr>
+				  			<td><b>Apellidos</b></td>
+				  			<td>
+				  				{{ object.last_name }}
+				  				{{ form.last_name.as_hidden }}
+				  			</td>
+				  		</tr>
+				  		<tr>
+				  			<td><b>Correo electrónico:</b></td>
+				  			<td>
+				  				{{ object.email }}
+				  				{{ form.email.as_hidden }}
+				  			</td>
+				  		</tr>
+				  		<tr>
+				  			<td><b>Rol:</b></td>
+				  			<td>
+				  				{{ object.role }}
+				  				{{ form.role.as_hidden }}
+				  			</td>
+				  		</tr>
+				  		<tr>
+				  			<td><b>Status:</b></td>
+				  			<td>
+			  				{% if object.is_active %}
+			  					{{ object.is_active_user }}
+			  					<p>
+			  						¿Quieres desactivar este usuario?
+					  				{{ form.is_active }}
+					  				{{ form.is_active.errors }}
+				  				</p>
+			  				{% else %}
+				  				{{ object.is_active_user }}	  					
+			  				{% endif %}
+				  			</td>
+				  		</tr>
+				  		<tr>
+				  			<td><b>Fecha de ingreso:<b></td>
+				  			<td>{{ object.date_joined }}</td>
+				  		</tr>
+				  		<tr>
+				  			<td><b>Última actualización<b></td>
+				  			<td>{{ object.updated_at }}</td>
+				  		</tr>
+				  	</tbody>
+				</table>
+			</div>
+			{% if object.is_active %}
+			<input type="submit" value="Actualizar" class="btn btn-primary">	
+			{% endif %}
+		</form>
+	</section>
+{% endblock %}

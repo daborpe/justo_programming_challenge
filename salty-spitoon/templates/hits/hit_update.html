@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Salty Spitoon | Detalle de golpe{% endblock %}
+
+{% block content %}
+	<section class="hit_create">
+		<form method="post" autocomplete="off" novalidate>
+			{% csrf_token %}
+			<div class="table-responsive mt-2">
+				<table class="table table-hover">
+					<thead class="thead-orange">
+					    <tr>
+					     	<th colspan="2" scope="col">
+					     		DETALLE DE GOLPE
+					     	</th>
+					    </tr>
+				  	</thead>
+				  	<tbody>
+				  		<tr>
+				  			<td><b>Solicitante</b>:</td>
+				  			<td>
+				  				{{ object.requester.get_full_name }}
+				  				{{ form.requester.as_hidden }}
+				  			</td>
+				  		</tr>
+				  		<tr>
+				  			<td><b>Sicario asignado:</b></td>
+				  			<td>
+			  				{% if request.user.role == 'manager' or request.user.role == 'boss' and object.status == 'assigned' and not hitman_is_manager %}
+			  					{{ form.hitman }}
+			  					{{ form.hitman.errors }}
+			  				{% else %}
+			  					{{ object.hitman.get_full_name }}
+			  					{{ form.hitman.as_hidden }}
+			  				{% endif %}
+				  			</td>
+				  		</tr>
+				  		<tr>
+				  			<td><b>Objetivo:</b></td>
+				  			<td>
+				  				{{ object.target }}
+				  				{{ form.target.as_hidden }}
+				  			</td>
+				  		</tr>
+				  		<tr>
+				  			<td><b>Descripción:</b></td>
+				  			<td>
+				  				{{ object.description }}
+				  				{{ form.description.as_hidden }}
+				  			</td>
+				  		</tr>
+				  		<tr>
+				  			<td><b>Status:</b></td>
+				  			<td>
+			  				{% if user.role == 'hitman' or hitman_is_manager %}
+			  					{% if object.status == 'assigned' %}
+				  					{{ form.status }}
+					  				{{ form.status.errors }}
+			  					{% else %}
+				  					{{ object.get_status_text }}
+				  					{{ form.status.as_hidden }}
+				  				{% endif %}
+				  			{% else %}
+				  				{{ object.get_status_text }}
+				  				{{ form.status.as_hidden }}
+			  				{% endif %}
+				  			</td>
+				  		</tr>
+				  		<tr>
+				  			<td><b>Fecha de solicitud:<b></td>
+				  			<td>{{ object.created_at }}</td>
+				  		</tr>
+				  		<tr>
+				  			<td><b>Fecha de actualización:<b></td>
+				  			<td>{{ object.updated_at }}</td>
+				  		</tr>
+				  	</tbody>
+				</table>
+			</div>
+			{% if object.status == 'failed' or object.status == 'completed' %}
+			{% else %}
+			<input type="submit" value="Actualizar" class="btn btn-primary">	
+			{% endif %}
+		</form>
+	</section>
+{% endblock %}

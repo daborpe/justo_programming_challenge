@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Salty Spitoon | Listado de sicarios{% endblock %}
+
+{% block content %}
+<section id="manageruser-table">
+	<div class="table-responsive mt-3">
+		<table class="table table-hover">
+			<thead class="thead-orange">
+			    <tr>
+			     	<th scope="col">
+			     		NOMBRE
+			     	</th>
+			     	<th scope="col">
+			     		EMAIL
+			     	</th>
+			     	<th scope="col">
+			     		ROL
+			     	</th>
+			     	<th scope="col">
+			     		STATUS
+			     	</th>
+			     	<th scope="col">
+			     		SE UNIÓ
+			     	</th>
+			    </tr>
+		  	</thead>
+		  	<tbody>
+		    {% for user in object_list %}
+			    <tr>
+			        <td align="center">
+			        	<a href="{% url 'users:update' user.lackey.pk %}">
+			        		{{ user.lackey.get_full_name }}
+			        	</a>
+			        </td>
+			        <td align="center">{{ user.lackey.email }}</td>
+			        <td align="center">{{ user.lackey.role }}</td>
+			        <td align="center">{{ user.lackey.is_active_user }}</td>
+			        <td align="center">{{ user.lackey.date_joined }}</td>
+			    </tr>
+		    {% empty %}
+		        <tr>
+		            <td colspan="9" align="center">No tienes sicarios a tu cargo</td>
+		        </tr>
+		    {% endfor %}
+		  	</tbody>
+		</table>
+	</div>
+	{% include "hits/_pagination.html" %}
+</section>
+{% endblock %}

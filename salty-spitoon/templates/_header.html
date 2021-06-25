@@ -1,0 +1,39 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light border">
+	<a class="navbar-brand" href="{% url 'hits:list' %}">
+    	<img src="{% static 'img/logo.png' %}" class="d-inline-block align-top img-fluid" alt="Logo" loading="lazy">
+	</a>
+	{% if user.is_authenticated %}
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#profileCollapse" aria-controls="profileCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  	</button>
+	<div class="collapse navbar-collapse" id="profileCollapse">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="hitsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          			Golpes
+        		</a>
+				<div class="dropdown-menu" aria-labelledby="hitsDropdown">
+				 	<a class="dropdown-item" href="{% url 'hits:list' %}">Listado</a>
+				  	{% if request.user.is_manager %}
+				  	<div class="dropdown-divider"></div>
+				  	<a class="dropdown-item" href="{% url 'hits:bulk' %}">Bulk</a>
+					{% endif %}
+				</div>
+			</li>
+			{% if request.user.is_manager %}		
+			<li class="nav-item">
+				<a href="{% url 'users:list' %}" class="nav-link">Sicarios</a>
+			</li>	
+			{% endif %}
+			<li>
+				<a href="{% url 'users:logout' %}" class="nav-link">Cerrar sesión</a>
+			</li>
+		</ul>
+		<span class="navbar-text">
+			Hola, {{ request.user.get_full_name }} 
+		</span>
+	</div>
+	{% endif %}	
+</nav>
+{% include "_messages.html" %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Salty Spitoon | Iniciar Sesión{% endblock %}
+
+{% block extra_styles %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+{% endblock %}
+
+{% block content %}
+<section id="login">
+	{% if next %}
+	    {% if user.is_authenticated %}
+	    	<p>
+	    		No tienes permiso para ver esta página. Inicia sesión con una cuenta con los permisos suficientes.
+	    	</p>
+	    {% else %}
+	    	<p>
+	    		Inicia sesión para ver esta página.
+	    	</p>
+	    {% endif %}
+	{% endif %}
+	<div class="wrapper fadeInDown">
+	  	<div id="formContent">
+		    <form method="post" autocomplete="off" novalidate>
+		    	{% csrf_token %}
+		    	{{ form }}
+				<input type="submit" value="login" class="mb-3">
+				<input type="hidden" name="next" value="{{ next }}">
+		    </form>
+		    <h2 class="inactive">
+		    	¿Quieres ser parte de esta organización? Registrate <a href="{% url 'users:register' %}">aquí</a>
+		    </h2>
+	  	</div>
+	</div>
+</section>
+{% endblock %}

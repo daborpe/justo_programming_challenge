@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Salty Spitoon | Registro de Sicarios{% endblock %}
+
+{% block extra_styles %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+{% endblock %}
+
+{% block content %}
+<section id="register">
+	<div class="wrapper fadeInDown">
+	  	<div id="formContent">
+		    <form method="post" autocomplete="off" novalidate>
+		    	{% csrf_token %}
+		    	{{ form }}
+		    	<br><br>
+				<input type="submit" value="Registrar" class="mb-3">
+				<input type="hidden" name="next" value="{{ next }}">
+		    </form>
+	  	</div>
+	</div>
+</section>
+{% endblock %}
