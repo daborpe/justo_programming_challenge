@@ -1,0 +1,5 @@
+bpython==0.21
+Django==3.2.4
+django-extra-views==0.14.0
+mysqlclient==2.0.3
+python-dotenv==0.18.0
