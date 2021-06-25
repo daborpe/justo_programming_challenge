@@ -1,0 +1,15 @@
+.DS_Store
+*.pyc
+*.pyo
+*.swp
+*.rdb
+*.db
+*.log
+db.sqlite3
+virtualenv
+.env
+*/public/static/
+media/
+ignore/
+*.csv
+__pycache__
